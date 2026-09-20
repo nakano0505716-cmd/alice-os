@@ -1,0 +1,23 @@
+# 投資部每日報告 — 排程意圖（執行器可映射到 cron / Grok routine / Actions）
+id: investing-daily-report
+timezone: Asia/Taipei
+enabled: true
+
+# 預設晚間彙整（可調）
+cron: "0 20 * * 1-5"  # 週一到五 20:00
+
+steps:
+  - collect: [us-stock-agent, tw-stock-agent, etf-agent, macro-agent]
+  - optional_screen: dragon-water  # 發哥公式
+  - aggregate: investing-manager
+  - format: scripts/investing/format_daily_report.py  # 或同等 formatter
+  - notify:
+      channel: "#daily-report"
+      also_post_details:
+        us: "#us-stock"
+        tw: "#tw-stock"
+        etf: "#etf"
+        macro: "#macro"
+      alerts_channel: "#alerts"
+
+output_artifact: out/daily-report.md

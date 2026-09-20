@@ -1,0 +1,48 @@
+# 範本：複製為 watchlist.yaml 後依個人修改
+# 時區預設 Asia/Taipei (UTC+8)
+
+version: 1
+timezone: Asia/Taipei
+owner: alice-user
+
+style:
+  primary: long_term
+  notes: 長期為主，偶爾短線；台股偏好零股友善標的
+
+holdings_example:
+  - symbol: "2330.TW"
+    qty: 20
+  - symbol: "TSLA"
+    qty: 1
+  - symbol: "QQQ"
+    qty: 1
+  - symbol: "0050.TW"
+    qty: 0
+    note: watch only
+
+watchlist:
+  us:
+    - TSLA
+    - NVDA
+    - QQQ
+  tw:
+    - "2330.TW"
+    - "0050.TW"
+  etf:
+    - QQQ
+    - "0050.TW"
+  macro_themes:
+    - Fed
+    - CPI
+
+screens:
+  dragon_water:
+    enabled: true
+    markets: [TW, US]
+    tw_prefer_odd_lot: true
+    odd_lot_close_max_twd: 200
+    odd_lot_best_max_twd: 100
+
+alerts:
+  price_move_pct: 5
+  volume_spike_mult: 3

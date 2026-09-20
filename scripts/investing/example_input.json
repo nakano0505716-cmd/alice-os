@@ -1,0 +1,59 @@
+{
+  "date": "2026-09-20",
+  "timezone": "Asia/Taipei",
+  "us_light": "🟡",
+  "us_summary": "科技股震盪；NVDA 相關消息需對照 QQQ。",
+  "tw_light": "🟢",
+  "tw_summary": "權值穩；外資無劇烈轉向。",
+  "etf_light": "🟢",
+  "etf_summary": "QQQ／0050 無須調整定投節奏。",
+  "macro_light": "🟡",
+  "macro_summary": "本週留意 Fed 官員談話。",
+  "top_items": [
+    "🟡 NVDA 供應鏈雜音 — 可能小幅牽動 QQQ",
+    "🟢 2330 外資連續買超但幅度溫和 — 僅觀察",
+    "🟡 Fed 官員談話（明日）— 利率預期敏感"
+  ],
+  "holdings_impact": "持倉範例 TSLA×1、2330×20、QQQ×1：今日無單一事件需改計畫。",
+  "dragon_water": {
+    "as_of": "2026-09-18",
+    "tw_odd_lot": [
+      {
+        "symbol": "9945.TW",
+        "name": "Ruentex",
+        "score": 145.0,
+        "vol_contr": 0.37,
+        "prior_gain_pct": 37,
+        "dist_ma60_pct": 6.1,
+        "macd_golden_above_zero": true,
+        "close": 28.9,
+        "note": "零股友善(≤100)"
+      },
+      {
+        "symbol": "4938.TW",
+        "name": "Pegatron",
+        "score": 134.33,
+        "vol_contr": 0.37,
+        "prior_gain_pct": 31,
+        "dist_ma60_pct": 3.3,
+        "macd_golden_above_zero": true,
+        "close": 90.3,
+        "note": "零股友善(≤100)"
+      }
+    ],
+    "us_all": [
+      {
+        "symbol": "FTNT",
+        "name": "Fortinet",
+        "score": 118.0,
+        "vol_contr": 0.56,
+        "prior_gain_pct": 119,
+        "dist_ma60_pct": 6.4,
+        "macd_golden_above_zero": true,
+        "note": "near/broke platform"
+      }
+    ]
+  },
+  "manager_conclusion": "今天不用操作。維持既有長期計畫，等待明日 Fed 相關發言再評估風險偏好。",
+  "tomorrow_watch": "Fed 官員談話；若 NVDA 相關出現 importance≥4 再進 #alerts。"
+}

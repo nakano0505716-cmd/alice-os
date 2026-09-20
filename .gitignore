@@ -1,0 +1,27 @@
+# Secrets & local env
+.env
+.env.local
+*.pem
+*.key
+credentials*.json
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+
+# Outputs & caches
+out/
+.yfcache/
+*.partial.csv
+.DS_Store
+
+# Editor / OS
+.idea/
+.vscode/
+*.swp
+
+# Optional private watchlist (keep example tracked)
+departments/investing/watchlist.yaml
