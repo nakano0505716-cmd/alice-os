@@ -1,0 +1,23 @@
+# 旅遊部每日價格監控 — 排程意圖（執行器可映射到 cron / Grok routine / Actions）
+id: travel-daily-watch
+timezone: Asia/Taipei
+enabled: true
+
+# 平日早上台北時間檢查（可調）
+cron: "0 8 * * 1-5"  # 週一到五 08:00 Asia/Taipei
+
+steps:
+  - load_watchlist: departments/travel/watchlist.yaml  # 由 example 複製而來
+  - collect: [flight-prices, lodging-availability]
+  - compare: previous_snapshot
+  - aggregate: travel-manager
+  - format: report-templates/price-watch.md
+  - notify:
+      # V0：複用 daily-report webhook；未來可改 travel webhook + bot chat
+      channel: "#daily-report"
+      webhook_env: DISCORD_WEBHOOK_DAILY_REPORT
+      future_webhook_env: DISCORD_WEBHOOK_TRAVEL
+      also_bot_chat: true  # 未來 travel bot chat
+      alerts_channel: "#alerts"  # 大幅跌價／限時窗口
+
+output_artifact: out/travel-price-watch.md

@@ -1,0 +1,33 @@
+# 範本：複製為 watchlist.yaml 後依個人修改
+# 時區預設 Asia/Taipei (UTC+8)
+# 這是 placeholder，不是真實行程。
+
+version: 1
+timezone: Asia/Taipei
+owner: alice-user
+
+# 價格單位預設 TWD；可在單筆 trip 覆寫 currency
+defaults:
+  currency: TWD
+  cabin: economy
+  notify_on:
+    - price_drop
+    - below_max_price
+    - lodging_available
+
+trips:
+  - trip_id: example-tpe-nrt-placeholder
+    origin: TPE
+    destination: NRT
+    depart_date: "2026-11-01"
+    return_date: "2026-11-08"   # 可選；單程可省略
+    cabin: economy
+    max_price: 18000            # 來回總價門檻（範例）
+    lodging_area: "Tokyo / Shinjuku"
+    lodging_checkin: "2026-11-01"
+    lodging_checkout: "2026-11-08"
+    notes: "範例占位：台北桃園 → 東京成田；非真實訂位"
+
+alerts:
+  price_drop_pct: 10            # 相對上次觀察價下跌 %
+  check_lodging: true
