@@ -17,3 +17,13 @@ python3 scripts/investing/format_daily_report.py \
 ```
 
 無需網路、無第三方套件。
+
+
+## Discord notify (dual delivery)
+
+```bash
+# requires DISCORD_WEBHOOK_DAILY_REPORT in .env or env
+python3 scripts/investing/notify_discord.py --file out/daily-report.md
+```
+
+Daily report should go to Discord **and** the 發哥公式 bot chat.
