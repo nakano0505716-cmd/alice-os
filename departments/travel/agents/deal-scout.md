@@ -11,7 +11,7 @@
 
 ## 來源
 
-見 `departments/travel/deal-sources.yaml`。使用者可再指定公開帳號／社團。
+見 `departments/travel/deal-sources.yaml`（含使用者 IG 動態消息帳號＋FB／Threads／PTT）。
 
 ## 行為
 

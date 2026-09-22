@@ -1,4 +1,5 @@
-# Public deal-scout sources (tracked). Candidates list: deal-sources-candidates.md
+# Active deal-scout sources — user confirmed 2026-09-22
+# Instagram list from user's 「編輯動態消息」 screenshots + prior FB/Threads/PTT picks
 version: 1
 priority_routes:
   - TPE-NRT
@@ -30,43 +31,188 @@ sources:
     name: PTT Japan_Travel
     url: https://www.pttweb.cc/bbs/Japan_Travel
     status: active
-    notes: "公開板；促銷實況"
 
   - id: fb-943fans
     type: facebook_page
-    name: "943 粉專"
+    name: "943（就是省）"
     url: https://www.facebook.com/943fans
-    status: candidate
-    notes: "需使用者勾選；公開貼文；登入牆時可能讀不到"
+    status: active
 
   - id: fb-taiwan-air-tkt
     type: facebook_page
     name: "台灣航空福利社"
     url: https://www.facebook.com/TaiwanAirTkt
-    status: candidate
-    notes: "促銷整理；需使用者勾選"
+    status: active
 
   - id: threads-brianin
     type: threads
     name: "Brian 布萊N"
     url: https://www.threads.com/@brianin.tw
-    status: candidate
+    status: active
 
   - id: threads-teekoahkia
     type: threads
     name: "Hsueh 機票天公囝仔"
     url: https://www.threads.com/@teekoahkia
-    status: candidate
+    status: active
 
-  - id: fb-clearance-welfare
-    type: facebook_page
-    name: "台灣清艙機票福利社"
-    url: null
-    status: candidate_caution
-    notes: "清艙／固定日；偏代購，保障弱於官網"
+  - id: ig-wake-up-food
+    type: instagram
+    name: "便宜機票阿凱出國去"
+    handle: "wake_up_food"
+    url: https://www.instagram.com/wake_up_food/
+    status: active
+    notes: "使用者動態消息截圖加入"
 
-  - id: threads-keywords
-    type: threads_search
-    name: Threads 關鍵字
-    queries: ["機票特價", "東京機票", "大阪機票", "名古屋 直飛"]
-    status: optional
+  - id: ig-stevenwang818
+    type: instagram
+    name: "晨心日本機票小舖"
+    handle: "stevenwang818"
+    url: https://www.instagram.com/stevenwang818/
+    status: active
+    notes: "使用者動態消息截圖加入"
+
+  - id: ig-frugalairticketsinfo
+    type: instagram
+    name: "廉價機票福利站"
+    handle: "frugalairticketsinfo"
+    url: https://www.instagram.com/frugalairticketsinfo/
+    status: active
+    notes: "使用者動態消息截圖加入"
+
+  - id: ig-cattravel-deals
+    type: instagram
+    name: "貓旅｜跟著貓貓便宜飛全世界"
+    handle: "cattravel.deals"
+    url: https://www.instagram.com/cattravel.deals/
+    status: active
+    notes: "使用者動態消息截圖加入"
+
+  - id: ig-charlotte-airticketmap
+    type: instagram
+    name: "夏綠蒂的機票地圖"
+    handle: "charlotte_airticketmap"
+    url: https://www.instagram.com/charlotte_airticketmap/
+    status: active
+    notes: "使用者動態消息截圖加入"
+
+  - id: ig-justinchen0908
+    type: instagram
+    name: "山富旅遊 陳登裕"
+    handle: "justinchen0908"
+    url: https://www.instagram.com/justinchen0908/
+    status: active
+    notes: "使用者動態消息截圖加入"
+
+  - id: ig-flyjapan-go
+    type: instagram
+    name: "飛日本-一言不合就買機票"
+    handle: "flyjapan_go"
+    url: https://www.instagram.com/flyjapan_go/
+    status: active
+    notes: "使用者動態消息截圖加入"
+
+  - id: ig-maan-worldtrip
+    type: instagram
+    name: "慢慢環球"
+    handle: "maan.worldtrip"
+    url: https://www.instagram.com/maan.worldtrip/
+    status: active
+    notes: "使用者動態消息截圖加入"
+
+  - id: ig-101vision
+    type: instagram
+    name: "101機票旅館票券情報"
+    handle: "101vision"
+    url: https://www.instagram.com/101vision/
+    status: active
+    notes: "使用者動態消息截圖加入"
+
+  - id: ig-flycheap168
+    type: instagram
+    name: "機票小女警"
+    handle: "flycheap168"
+    url: https://www.instagram.com/flycheap168/
+    status: active
+    notes: "使用者動態消息截圖加入"
+
+  - id: ig-howtravle
+    type: instagram
+    name: "howtravle（便宜機票｜旅遊分享）"
+    handle: "howtravle"
+    url: https://www.instagram.com/howtravle/
+    status: active
+    notes: "使用者動態消息截圖加入"
+
+  - id: ig-flywith-dog
+    type: instagram
+    name: "機票汪出國去 WantTravel"
+    handle: "flywith_dog"
+    url: https://www.instagram.com/flywith_dog/
+    status: active
+    notes: "使用者動態消息截圖加入"
+
+  - id: ig-boarding-wsw
+    type: instagram
+    name: "機票萬事屋"
+    handle: "boarding_wsw"
+    url: https://www.instagram.com/boarding_wsw/
+    status: active
+    notes: "使用者動態消息截圖加入"
+
+  - id: ig-bonbon-map
+    type: instagram
+    name: "機票甜心甜甜哥"
+    handle: "bonbon.map"
+    url: https://www.instagram.com/bonbon.map/
+    status: active
+    notes: "使用者動態消息截圖加入"
+
+  - id: ig-jy-trip365
+    type: instagram
+    name: "旅世界"
+    handle: "jy.trip365"
+    url: https://www.instagram.com/jy.trip365/
+    status: active
+    notes: "使用者動態消息截圖加入"
+
+  - id: ig-lai-airfare
+    type: instagram
+    name: "賴導機票快報"
+    handle: "lai.airfare"
+    url: https://www.instagram.com/lai.airfare/
+    status: active
+    notes: "使用者動態消息截圖加入"
+
+  - id: ig-camellia-crystal-8
+    type: instagram
+    name: "camellia 機票優惠"
+    handle: "camellia_crystal_8"
+    url: https://www.instagram.com/camellia_crystal_8/
+    status: active
+    notes: "使用者動態消息截圖加入"
+
+  - id: ig-jay-di--
+    type: instagram
+    name: "傑弟找機票"
+    handle: "jay.di__"
+    url: https://www.instagram.com/jay.di__/
+    status: active
+    notes: "使用者動態消息截圖加入"
+
+  - id: ig-flywithryango
+    type: instagram
+    name: "萊恩-機票住宿小肉腳"
+    handle: "flywithryango"
+    url: https://www.instagram.com/flywithryango/
+    status: active
+    notes: "使用者動態消息截圖加入"
+
+  - id: ig-lovemyb0ss
+    type: instagram
+    name: "社畜旅遊去／清艙機票"
+    handle: "lovemyb0ss"
+    url: https://www.instagram.com/lovemyb0ss/
+    status: active
+    notes: "使用者動態消息截圖加入"
+
