@@ -7,7 +7,7 @@
 | Agent | Prompt | 職責 |
 |-------|--------|------|
 | 旅遊助手（Travel Manager） | `prompts/departments/travel-manager.md` | 航線 watchlist 比價與住宿追蹤 |
-| 甜價偵察（已開 bot） | `prompts/departments/travel-deal-scout.md` | Threads／Facebook 等社群即時甜甜票價情報 |
+| 甜甜價機票釋出（已開 bot；原名甜甜價機票釋出） | `prompts/departments/travel-deal-scout.md` | Threads／Facebook 等社群即時甜甜票價情報 |
 
 ## 機票資訊來源（優先序）
 
