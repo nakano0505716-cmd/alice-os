@@ -7,7 +7,7 @@
 | Agent | Prompt | 職責 |
 |-------|--------|------|
 | 旅遊助手（Travel Manager） | `prompts/departments/travel-manager.md` | 航線 watchlist 比價與住宿追蹤 |
-| 甜價偵察（規劃中） | `prompts/departments/travel-deal-scout.md` | Threads／Facebook 等社群即時甜甜票價情報 |
+| 甜價偵察（已開 bot） | `prompts/departments/travel-deal-scout.md` | Threads／Facebook 等社群即時甜甜票價情報 |
 
 ## 機票資訊來源（優先序）
 
@@ -30,6 +30,8 @@
 - `report-templates/price-watch.md` — 每日價格監控報告骨架
 - `schedules/daily-watch.yaml` — 平日早上台北時間檢查意圖
 - `agents/deal-scout.md` — 社群甜價小 bot 規格（Threads／FB）
+- `deal-sources.yaml` — 公開甜價來源清單
+- `watchlist.yaml` — 本機追蹤清單（gitignore；範本見 example）
 
 ## Discord
 

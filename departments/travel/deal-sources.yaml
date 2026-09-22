@@ -1,0 +1,45 @@
+# Public deal-scout sources (tracked). Local overrides: deal-sources.local.yaml
+version: 1
+priority_routes:
+  - TPE-NRT
+  - TPE-HND
+  - TPE-KIX
+  - TPE-NGO
+filters:
+  nonstop_preferred: true
+  keywords_zh:
+    - 東京
+    - 大阪
+    - 名古屋
+    - 成田
+    - 羽田
+    - 關西
+    - 直飛
+    - 來回
+    - 促銷
+    - 清艙
+
+sources:
+  - id: ptt-japan-travel
+    type: ptt_board
+    name: PTT Japan_Travel
+    url: https://www.pttweb.cc/bbs/Japan_Travel
+    notes: "公開板；促銷實況常見"
+
+  - id: fb-943fans
+    type: facebook_page
+    name: "943 粉專"
+    url: https://www.facebook.com/943fans
+    notes: "廉航／促銷情報；僅公開貼文"
+
+  - id: fb-tw-aviation-welfare
+    type: facebook_group_or_page
+    name: "台灣航空福利社"
+    url: null
+    notes: "常見推薦社團；需使用者確認正確公開連結後再跟"
+
+  - id: threads-keywords
+    type: threads_search
+    name: Threads 關鍵字
+    queries: ["機票特價", "東京機票", "大阪機票", "名古屋 直飛"]
+    notes: "公開搜尋；帳號清單待補"

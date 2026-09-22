@@ -25,3 +25,7 @@ out/
 
 # Optional private watchlist (keep example tracked)
 departments/investing/watchlist.yaml
+
+# Travel private watchlist / deal sources (keep examples tracked)
+departments/travel/watchlist.yaml
+departments/travel/deal-sources.local.yaml

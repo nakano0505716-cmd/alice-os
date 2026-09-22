@@ -2,27 +2,27 @@
 
 旅遊部底下的**專責小 bot**：掃社群上的即時「甜甜票價」分享，轉成可核對的情報給旅遊助手／使用者。
 
+**Grok Bot 隊友：** 甜價偵察（id 4935400）
+
 ## 定位
 
 - **不是**主比價引擎（那是 Google Flights／Skyscanner／航司官網）  
 - **是**情報層：有人貼到超便宜窗時，快速標註並請主追蹤核價  
 
-## 建議來源（需使用者指定公開可跟的清單）
+## 來源
 
-- Threads 關鍵字／帳號（例如甜票、廉價航空促銷）  
-- Facebook 公開社團／粉專（僅公開貼文；尊重平台條款與隱私）  
-- 之後可擴：PTT、相關公開頻道  
+見 `departments/travel/deal-sources.yaml`。使用者可再指定公開帳號／社團。
 
 ## 行為
 
 1. 收集貼文中的：航線、日期彈性、標價、航空、貼文時間、連結  
 2. **不把社群標價當成交真相** — 一律交給旅遊助手用 Google Flights／Skyscanner／官網核價  
-3. 命中使用者 watchlist 航線或明顯低於 `max_price` 時警報（旅遊 Discord + bot）  
+3. 命中 watchlist 航線（目前 TPE→東京／大阪／名古屋直飛）或明顯低於 `max_price` 時警報（旅遊 Discord + bot）  
 4. 訂票／付款前一定要使用者確認  
 
 ## 實作狀態
 
-規劃中。Grok Bot 執行層可先用瀏覽器／公開頁；長期應可攜腳本放 `scripts/travel/`。
+已開 Grok Bot 隊友；執行層用瀏覽器／公開頁；長期腳本放 `scripts/travel/`。
 
 ## 免責
 
