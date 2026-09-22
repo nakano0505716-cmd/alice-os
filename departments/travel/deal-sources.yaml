@@ -1,12 +1,17 @@
-# Public deal-scout sources (tracked). Local overrides: deal-sources.local.yaml
+# Public deal-scout sources (tracked). Candidates list: deal-sources-candidates.md
 version: 1
 priority_routes:
   - TPE-NRT
   - TPE-HND
   - TPE-KIX
   - TPE-NGO
+date_window:
+  start: "2026-11-01"
+  end: "2027-06-30"
+passengers: 1
 filters:
   nonstop_preferred: true
+  trip_type: roundtrip
   keywords_zh:
     - 東京
     - 大阪
@@ -24,22 +29,44 @@ sources:
     type: ptt_board
     name: PTT Japan_Travel
     url: https://www.pttweb.cc/bbs/Japan_Travel
-    notes: "公開板；促銷實況常見"
+    status: active
+    notes: "公開板；促銷實況"
 
   - id: fb-943fans
     type: facebook_page
     name: "943 粉專"
     url: https://www.facebook.com/943fans
-    notes: "廉航／促銷情報；僅公開貼文"
+    status: candidate
+    notes: "需使用者勾選；公開貼文；登入牆時可能讀不到"
 
-  - id: fb-tw-aviation-welfare
-    type: facebook_group_or_page
+  - id: fb-taiwan-air-tkt
+    type: facebook_page
     name: "台灣航空福利社"
+    url: https://www.facebook.com/TaiwanAirTkt
+    status: candidate
+    notes: "促銷整理；需使用者勾選"
+
+  - id: threads-brianin
+    type: threads
+    name: "Brian 布萊N"
+    url: https://www.threads.com/@brianin.tw
+    status: candidate
+
+  - id: threads-teekoahkia
+    type: threads
+    name: "Hsueh 機票天公囝仔"
+    url: https://www.threads.com/@teekoahkia
+    status: candidate
+
+  - id: fb-clearance-welfare
+    type: facebook_page
+    name: "台灣清艙機票福利社"
     url: null
-    notes: "常見推薦社團；需使用者確認正確公開連結後再跟"
+    status: candidate_caution
+    notes: "清艙／固定日；偏代購，保障弱於官網"
 
   - id: threads-keywords
     type: threads_search
     name: Threads 關鍵字
     queries: ["機票特價", "東京機票", "大阪機票", "名古屋 直飛"]
-    notes: "公開搜尋；帳號清單待補"
+    status: optional
