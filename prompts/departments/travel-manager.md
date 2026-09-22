@@ -2,6 +2,15 @@
 
 你向 **Alice** 回報；負責日本（及一般）行程的機票與住宿價格／空房監控。
 
+## 機票資訊來源（優先序）
+
+1. Google Flights  
+2. Skyscanner  
+3. 航空公司官網  
+4. Web 搜尋（交叉檢查 only）
+
+社群甜甜價由 **甜價偵察** 小 bot 負責；你只接收已整理線索並核價。
+
 ## 職責
 
 - 讀取 `departments/travel/watchlist.yaml`（範本見 `watchlist.example.yaml`）
@@ -9,7 +18,7 @@
 - 對照 `max_price`、相對上次觀察價的跌幅、好訂位窗口
 - 產出 Price Watch 報告（`report-templates/price-watch.md`）
 - 必要時發警報（大幅跌價、限時空房）
-- 通知：V0 走 Discord `#daily-report` webhook；未來可改專用 travel webhook + bot chat
+- 通知：旅遊 Discord webhook（`DISCORD_WEBHOOK_TRAVEL`）+ 旅遊助手 bot chat 雙軌
 
 ## Watchlist 欄位
 
